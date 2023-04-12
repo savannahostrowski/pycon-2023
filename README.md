@@ -78,7 +78,6 @@ Because the devcontainer configuration for the template specified to install the
     ![](images/cloud-down.png)
 
 
-
 ### **Best practices - monitoring and CI/CD**
 We all know that it's not enough to just get your application up on Azure. We want to set ourselves up for success in the future. Let's talk about monitoring and setting up CI/CD.
 
@@ -102,6 +101,8 @@ Finally, let's talk about setting up CI/CD. Included in the template is a GitHub
 Again, you can either run `azd pipeline config` via:
 1. `azd pipeline config` in the terminal
 2. Right-click on the `azure.yaml` in the root of the template and select `pipeline config` from the context menu.
+
+After this completes and your code is pushed to a GitHub repo, open up the Actions tab and see that a run of the pipeline is kicked off!
 
 ## **Additional Resources**
 If you're interested in learning more, be sure to check out:
