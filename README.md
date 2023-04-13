@@ -31,15 +31,13 @@ In VS Code, you'll want to install:
 ## **The TL;DR (aka the _quick_ quickstart)**
 > Please install the Azure Developer CLI and template dependencies(instructions above) before tackling the quickstart. You can also try this same quickstart with any template found on [aka.ms/awesome-azd](https://aka.ms/awesome-azd). If you choose another template, just replace the template parameter in the `init` command with the GitHub URL to the template repo.
 
-Sometimes, you want to just get right into it and read about all the specifics later! That's cool. Run through these commands to authenticate on Azure, initialize using a template, provision infrastructure, deploy code, see monitoring dashboards and set up a CI/CD pipelines.
-
-Try this:
+Sometimes, you want to just get right into it and read about all the specifics later! That's cool. Run through these commands to authenticate on Azure, initialize using a template, provision infrastructure and deploy code on Azure.
 
 1. `azd auth login`
 2. `azd init --template Azure-Samples/todo-python-mongo-aca` (in an empty directory)
 3. `azd up`
 
-As a bonus, you can also run these (if the template has dashboard infrastructure and a GitHub Actions or Azure Pipelines definition):
+As a bonus, you can also run these commands to see monitoring dashboards and set up a CI/CD pipeline (if the template has dashboard infrastructure and a GitHub Actions or Azure Pipelines definition):
 
 4. `azd monitor`
 5. `azd pipeline config`
