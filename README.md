@@ -5,7 +5,7 @@ This repo hosts materials for my session at PyCon US 2023.
 - Had a hard time figuring out what infrastructure you need or how to configure it for your app? 
 - Spent too much time researching how to set up your local development environment for cloud development? 
 
-**Then, this talk (and repo!) is for you!**
+**Then, this talk/repo is for you!**
 
 Learn how to use real-world cloud development application templates via CLI to go from local development environment to the cloud. Scaffold your application, provision resources, deploy code, monitor your application health, and set up a CI/CD pipeline, all in a couple of steps and just a few minutes.
 
@@ -17,7 +17,7 @@ For the core `azd` experience, you'll want to:
 1. [Sign up for a free Azure Account](https://azure.microsoft.com/free). You also need [contributor role assigned](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) to your Azure subscription.
 1. Install `azd` - [aka.ms/azd-install](https://aka.ms/azd-install)
 
-For the template, you'll want to install:
+For [the template](https://github.com/Azure-Samples/todo-python-mongo-aca), you'll want to install:
 1. [Docker](https://docs.docker.com/get-docker/)
 1. [Python 3.8 +](https://www.python.org/downloads/)
 2. [Node.js with npm (16.13.1+)](https://nodejs.org/en)
