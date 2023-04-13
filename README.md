@@ -14,13 +14,13 @@ This talk is 1 part talk ([slides](/PyCon2023-slides.pdf)) and 1 part workshop/D
 ## **Workshop/DIY Prerequisites**
 
 For the core `azd` experience, you'll want to:
-1. [Sign up for a free Azure Account](https://azure.microsoft.com/free). You also need [contributor role assigned](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) to your Azure subscription.
-1. Install `azd` - [aka.ms/azd-install](https://aka.ms/azd-install)
+- [Sign up for a free Azure Account](https://azure.microsoft.com/free). You also need [contributor role assigned](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) to your Azure subscription.
+- Install `azd` - [aka.ms/azd-install](https://aka.ms/azd-install)
 
 For [the template](https://github.com/Azure-Samples/todo-python-mongo-aca), you'll want to install:
-1. [Docker](https://docs.docker.com/get-docker/)
-1. [Python 3.8 +](https://www.python.org/downloads/)
-2. [Node.js with npm (16.13.1+)](https://nodejs.org/en)
+-  [Docker](https://docs.docker.com/get-docker/)
+-  [Python 3.8 +](https://www.python.org/downloads/)
+- [Node.js with npm (16.13.1+)](https://nodejs.org/en)
 
 In VS Code, you'll want to install:
 - [Azure Tools extension pack for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), which includes the [Azure Developer CLI extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.azure-dev)
