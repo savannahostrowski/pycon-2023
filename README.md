@@ -17,20 +17,23 @@ This talk is 1 part talk ([slides](/PyCon2023-slides.pdf)) and 1 part workshop/D
 1. Install `azd` - [aka.ms/azd-install](https://aka.ms/azd-install)
 
 ## **Quickstart**
-For this DIY workshop, we're going to get https://github.com/Azure-Samples/todo-python-mongo-aca up and running on Azure in just a couple of minutes. This template uses React for the frontend, Python with FastAPI for the backend, Azure Cosmos DB for MongoDB for storage, and Azure Monitor for monitoring and logging. The template also includes sample application code (a ToDo application) included as a proof-of-concept. Azure Developer CLI-compatible repos/templates are designed to be extensible and easy to customize. The idea is that you can find a template that matches your application's architecture (e.g. frontend, backend, database) and use the template as a foundational blueprint for getting your application up on Azure. 
-
-### **Let's get the application template code!**
-1. Head on over to https://github.com/Azure-Samples/todo-python-mongo-aca
-1. Click on the "GitHub Codespaces - Open" badge in the README.
-
-From here, the repo will open in Codespaces. Because there's a DevContainer configuration included in the template, we'll be ready to go with `azd` after the Codespace is spun up.
 
 ### **Authenticate!**
-To authenticate, you have two options:
-1. Run `azd auth login` in the Codespaces terminal, or 
-1. Open the command palette (ctrl + shift + p on Windows or cmd + shift + p on Mac) and type "azd sign in". Select "Azure Developer: Sign in with the Azure Developer CLI".
+Run `azd auth login` in your terminal.
 
-With either of these actions, you will see a prompt in the terminal to click a link and enter a code to authenticate on Azure.
+This will open a browser for you to authenticate on Azure.
+
+### **Let's grab an application template!**
+For this DIY workshop, we're going to get https://github.com/Azure-Samples/todo-python-mongo-aca up and running on Azure in just a couple of minutes. This template uses React for the frontend, Python with FastAPI for the backend, Azure Cosmos DB for MongoDB for storage, and Azure Monitor for monitoring and logging. The template also includes sample application code (a ToDo application) included as a proof-of-concept. Azure Developer CLI-compatible repos/templates are designed to be extensible and easy to customize. The idea is that you can find a template that matches your application's architecture (e.g. frontend, backend, database) and use the template as a foundational blueprint for getting your application up on Azure. 
+
+1. Make a new directory - `mkdir pycon-azd-todo`
+1. Change into that directory - `cd pycon-azd-todo`
+1. Run `azd init --template Azure-Samples/todo-python-mongo-aca`. 
+
+After running this `azd init` command, you'll be prompted for:
+- An environment name - The environment name is not your virtual environment. You should name it something that can help you identify the project and stage i.e. **todo-dev** etc.
+
+Finally, let's open the project in VS Code by typing `code .`.
 
 ### **Provision infrastructure and deploy application code**
 Now, let's run the `azd up` command. This command is a special, workflow-type command which will:
@@ -40,13 +43,12 @@ Now, let's run the `azd up` command. This command is a special, workflow-type co
 
 This step will take a couple of minutes. With this command, `azd` isn't just hosting your application on Azure. It's setting up roles and permissions, Key Vault for storing secrets, wiring up our database, and more!
 
-Options for running `up` in Codespaces:
+Options for running `up` in VS Code:
 
 1. `azd up` in the terminal
 2. Right-click on the `azure.yaml` in the root of the template and select `up` from the context menu.
 
 After running this command, you'll be prompted for:
-- An environment name - The environment name is not your virtual environment. You should name it something that can help you identify the project and stage i.e. **todo-dev** etc.
 - An Azure subscription to use
 - A location (eastus, westus, etc) to deploy the application to
 
@@ -61,7 +63,7 @@ After running this command, you'll be prompted for:
 > `azure.yaml` - an `azd` specific file that defines application metadata (e.g. languages, hosts, paths to code needed to build the app)
 
 
-### Exploring resources using the Azure Tools extension pack for VS Code/Codespaces
+### Exploring resources using the Azure Tools extension pack for VS Code
 Because the devcontainer configuration for the template specified to install the [Azure Tools extension pack for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), we can also see what resources and services were created after running `azd up` in an application view.
 
 1. Click on the Azure icon in the siderail.
@@ -84,7 +86,7 @@ We all know that it's not enough to just get your application up on Azure. We wa
 #### **Monitor your app**
 As part of `azd provision` (which was run as part of the `azd up` command), we created some application monitoring infrastucture. In the `infra/main.bicep` of https://github.com/Azure-Samples/todo-python-mongo-aca, you'll find a [`monitoring`](https://github.com/Azure-Samples/todo-python-mongo-aca/blob/988a22d0f5d7c4d269b2e8ab6d09ea3f8cd9b4d1/infra/main.bicep#L138) module which created all the monitoring infrastructure and a dashboard for our application. By running the following command, you will be brought to that dashboard and see usage, performance and reliability metrics for your application.
 
-Options for running `monitor` in Codespaces:
+Options for running `monitor` in VS Code:
 
 1. `azd monitor` in the terminal
 1. Right-click on the `azure.yaml` in the root of the template and select `monitor` from the context menu. Select "Application Insights Overview Dashboard" from the list and then "OK".
