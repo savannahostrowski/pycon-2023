@@ -17,10 +17,12 @@ For the core `azd` experience, you'll want to:
 - [Sign up for a free Azure Account](https://azure.microsoft.com/free). You also need [contributor role assigned](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) to your Azure subscription.
 - Install `azd` - [aka.ms/azd-install](https://aka.ms/azd-install)
 
-For [the template](https://github.com/Azure-Samples/todo-python-mongo-aca), you'll want to install:
--  [Docker](https://docs.docker.com/get-docker/)
--  [Python 3.8 +](https://www.python.org/downloads/)
+For[the template](https://github.com/Azure-Samples/todo-python-mongo-aca), you'll want to install:
+- [Docker](https://docs.docker.com/get-docker/)
+- [Python 3.8 +](https://www.python.org/downloads/)
 - [Node.js with npm (16.13.1+)](https://nodejs.org/en)
+ 
+ > Note: if you choose another template, then you will need to install the dependencies as they are listed in that template's README. They may or may not be the same as listed above.
 
 In VS Code, you'll want to install:
 - [Azure Tools extension pack for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), which includes the [Azure Developer CLI extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.azure-dev)
@@ -29,7 +31,7 @@ In VS Code, you'll want to install:
 ## **The TL;DR (aka the _quick_ quickstart)**
 > Please install the Azure Developer CLI and template dependencies(instructions above) before tackling the quickstart. You can also try this same quickstart with any template found on [aka.ms/awesome-azd](https://aka.ms/awesome-azd). If you choose another template, just replace the template parameter in the `init` command with the GitHub URL to the template repo.
 
-Sometimes, you want to just get right into and read about all the specifics later! That's cool. Run through these commands to authenticate on Azure, initialize using a template, provision infrastructure, deploy code, see monitoring dashboards and set up a CI/CD pipelines.
+Sometimes, you want to just get right into it and read about all the specifics later! That's cool. Run through these commands to authenticate on Azure, initialize using a template, provision infrastructure, deploy code, see monitoring dashboards and set up a CI/CD pipelines.
 
 Try this:
 1. `azd auth login`
