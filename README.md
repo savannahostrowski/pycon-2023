@@ -34,11 +34,13 @@ In VS Code, you'll want to install:
 Sometimes, you want to just get right into it and read about all the specifics later! That's cool. Run through these commands to authenticate on Azure, initialize using a template, provision infrastructure, deploy code, see monitoring dashboards and set up a CI/CD pipelines.
 
 Try this:
+
 1. `azd auth login`
 2. `azd init --template Azure-Samples/todo-python-mongo-aca` (in an empty directory)
 3. `azd up`
 
 As a bonus, you can also run these (if the template has dashboard infrastructure and a GitHub Actions or Azure Pipelines definition):
+
 4. `azd monitor`
 5. `azd pipeline config`
 
