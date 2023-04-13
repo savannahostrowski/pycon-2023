@@ -97,11 +97,13 @@ After running this command, you'll be prompted for:
 ### Exploring resources using the Azure Tools extension pack for VS Code
 We can also install the [Azure Tools extension pack for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) which will we can also see what resources and services were created after running `azd up` in an application view.
 
-1. Click on the Azure icon in the Activity Bar.
+1. Click on the Azure icon in the activity bar.
 1. In the workspace view, you'll see that we have a visual representation of our `azure.yaml`. 
+
     ![](/images/app-tree-view.png)
 
 1. Right-click on the `web` node under `Services` and notice that there are contextually relevant `azd` commands like `azd deploy` (which would allow us to deploy our code on Azure for the frontend). 
+
     ![](images/app-tree-view-deploy.png)
 
 1. We could even click on the "cloud down" icon to run `azd down` and destroy all the infrastructure and deployments related to this application.
