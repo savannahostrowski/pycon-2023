@@ -12,6 +12,8 @@ Learn how to use real-world cloud development application templates via CLI to g
 This talk is 1 part talk ([slides](/PyCon2023-slides.pdf)) and 1 part workshop/DIY!
 
 ## **Workshop/DIY Prerequisites**
+> If you are attending this workshop in person at PyCon, you should redeem your Azure credits at [microsoftazurepass.com](https://microsoftazurepass.com) and follow these [Azure Pass redemption instructions](https://www.microsoftazurepass.com/Home/HowTo) before starting!
+
 
 For the core `azd` experience, you'll want to:
 - [Sign up for a free Azure Account](https://azure.microsoft.com/free). You also need [contributor role assigned](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) to your Azure subscription.
