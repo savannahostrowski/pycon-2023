@@ -1,4 +1,6 @@
 # Accelerate your workflow from local Python prototype to the cloud (PyCon US 2023)
+**You can watch a recording of this session on [YouTube](https://www.youtube.com/watch?v=KBYE53i7eGU).
+
 This repo hosts materials for my session at PyCon US 2023.
 
 - Have you ever struggled taking a Python application from your local machine to the cloud? 
